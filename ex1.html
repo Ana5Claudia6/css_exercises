@@ -1,26 +1,36 @@
 <html>
 	<head>
 		<title> Contact us </title>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
 	</head>
 
 	<body>
+		<h1> Contact us </h1>
 		<form>
 
-		<label for = "name" > Name: </label>
-		<input id="name" type="text" required />
-		<br>
+		<div>
+			<label for = "name" > Name: </label>
+			<input id="name" type="text" required />
+		</div>
+		<!--br-->
 
+		<div>
 		<label for = "email" > Email: </label>
 		<input id="email" type="email"  required />
-		<br>
+		</div>
+		<!--br-->
+		
 		<!-- br * break line -->
-
+		<!-- div * isola uma funcao, ou seja ocupa toda a linha -->
+		<div>
 		<label for = "company" > Company: </label>
 		<input id="company" type="text" />
-		<br>
+		</div>
 
-		Where did you hear about us?
-		<select>
+		<!--br-->
+		<div>
+			<label for ="source"> Where did you hear about us? </label>
+		<select name= "source">
 
 			<option value = " Social networks">
 				Social networks </option> 
@@ -32,14 +42,16 @@
 				Other </option>
 		</select>
 
-		<br>
+		</div>
+		<div>
 
 		<input type ="checkbox" /> I want Receive news and updates
 
-		<br>
+		</div>
 
+		<div>
 		<input type = "submit" value = "Submit">
-
+	</div>
 
 		</form>
 	</body>
